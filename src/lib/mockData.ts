@@ -1,3 +1,5 @@
+import eipaAvatar from "@/assets/avatar-eipa.jpg";
+
 export interface User {
   id: string;
   name: string;
@@ -46,7 +48,7 @@ export const currentUser: User = {
 const users: User[] = [
   currentUser,
   { id: "2", name: "Maya Rodriguez", handle: "@mayabuilds", avatar: "", bio: "Design engineer", followers: 8200, following: 445, verified: true },
-  { id: "3", name: "Eipa Cosmas", handle: "@eipacms672", avatar: "", bio: "AI researcher @ DeepMind", followers: 45600, following: 312, verified: true },
+  { id: "3", name: "Eipa Cosmas", handle: "@eipacms672", avatar: eipaAvatar, bio: "AI researcher @ DeepMind", followers: 45600, following: 312, verified: true },
   { id: "4", name: "Priya Sharma", handle: "@priyacodes", avatar: "", bio: "Rust & WebAssembly", followers: 3100, following: 678, verified: false },
   { id: "5", name: "Leo Thompson", handle: "@leo_designs", avatar: "", bio: "Product designer", followers: 19800, following: 234, verified: true },
 ];

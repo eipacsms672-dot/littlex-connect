@@ -36,9 +36,13 @@ export function PostCard({ post, index = 0 }: PostCardProps) {
     >
       <div className="flex gap-3">
         {/* Avatar */}
-        <div className="h-10 w-10 shrink-0 rounded-full bg-secondary flex items-center justify-center text-sm font-bold text-secondary-foreground">
-          {post.author.name[0]}
-        </div>
+        {post.author.avatar ? (
+          <img src={post.author.avatar} alt={post.author.name} className="h-10 w-10 shrink-0 rounded-full object-cover" />
+        ) : (
+          <div className="h-10 w-10 shrink-0 rounded-full bg-secondary flex items-center justify-center text-sm font-bold text-secondary-foreground">
+            {post.author.name[0]}
+          </div>
+        )}
 
         <div className="min-w-0 flex-1">
           {/* Header */}
