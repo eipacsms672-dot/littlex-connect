@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['"Space Grotesk"', 'sans-serif'],
+        body: ['"DM Sans"', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -57,6 +61,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        glow: "hsl(var(--glow))",
+        "surface-raised": "hsl(var(--surface-raised))",
+        "surface-overlay": "hsl(var(--surface-overlay))",
+        success: "hsl(var(--success))",
+        warning: "hsl(var(--warning))",
+        engagement: "hsl(var(--engagement))",
       },
       borderRadius: {
         lg: "var(--radius)",
